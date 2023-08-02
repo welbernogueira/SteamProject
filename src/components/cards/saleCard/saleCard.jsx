@@ -16,7 +16,7 @@ export default function SaleCard() {
             <h4 className={styles.discountprice}>R$89,90</h4>
           </div>
         </div>
-        <Button>adicionar ao carrinho</Button>
+        <Button fullWidth>adicionar ao carrinho</Button>
       </div>
     </div>
   );

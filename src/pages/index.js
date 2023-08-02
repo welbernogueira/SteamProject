@@ -6,7 +6,8 @@ import Navbar from "@/components/navbar/navbar";
 import Logo from "@/components/logo/logo";
 import Subtitle from "@/components/tipography/subtitle/subtitle";
 import Container from "@/components/container/container";
-import SaleCard from "@/components/cards/saleCard";
+import SaleCard from "@/components/cards/saleCard/saleCard";
+import GameCard from "@/components/cards/gameCard/gameCard";
 
 export default function Home() {
   return (
@@ -33,6 +34,11 @@ export default function Home() {
           </div>
           <div className={styles.session}>
             <Subtitle> Outros Jogos</Subtitle>
+            <div>
+              <GameCard />
+              <GameCard />
+              <GameCard />
+            </div>
           </div>
         </Container>
       </div>
