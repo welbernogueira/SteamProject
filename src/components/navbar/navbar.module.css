@@ -6,3 +6,7 @@
   justify-content: space-between;
   padding: 0 70px;
 }
+
+.search {
+  min-width: 300px;
+}
