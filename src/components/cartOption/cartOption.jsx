@@ -6,6 +6,7 @@ export default function CartOption({ image, title, price, onRemove }) {
   return (
     <div className={styles.option}>
       <Image
+        className={styles.image}
         src={`/products/${image}`}
         alt={`Produto ${image}`}
         width={62}
