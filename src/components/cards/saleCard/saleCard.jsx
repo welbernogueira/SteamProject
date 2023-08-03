@@ -8,6 +8,7 @@ export default function SaleCard({
   discount,
   fullPrice,
   discountPrice,
+  onAdd,
 }) {
   return (
     <div className={styles.salecard}>
@@ -26,7 +27,9 @@ export default function SaleCard({
             <h4 className={styles.discountprice}>R${discountPrice}</h4>
           </div>
         </div>
-        <Button fullWidth>adicionar ao carrinho</Button>
+        <Button fullWidth onClick={onAdd}>
+          adicionar ao carrinho
+        </Button>
       </div>
     </div>
   );

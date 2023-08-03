@@ -6,7 +6,7 @@ import { BsCart4 } from "react-icons/bs";
 
 import CartMenu from "@/components/cartMenu/cartMenu";
 
-export default function CartButton() {
+export default function CartButton({ cart, onRemove }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ export default function CartButton() {
           setOpen(!open);
         }}
       />
-      {open && <CartMenu />}
+      {open && <CartMenu cart={cart} onRemove={onRemove} />}
     </div>
   );
 }

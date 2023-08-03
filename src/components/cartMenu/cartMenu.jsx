@@ -1,14 +1,20 @@
 import styles from "./cartMenu.module.css";
-
 import CartOption from "@/components/cartOption/cartOption";
 
-export default function CartMenu() {
+export default function CartMenu({ cart, onRemove }) {
   return (
     <div className={styles.menu}>
       <div className={styles.options}>
-        <CartOption />
-        <CartOption />
-        <CartOption />
+        {cart.length === 0 && <p>Nenhum produto no carrinho!</p>}
+        {cart.map((cartInfo, pos) => (
+          <CartOption
+            image={cartInfo.image}
+            title={cartInfo.name}
+            price={cartInfo.price}
+            onRemove={() => onRemove(pos)}
+            key={`cart-info=${pos}`}
+          />
+        ))}
       </div>
       <div className={styles.priceline}>
         <h2>Total</h2>
