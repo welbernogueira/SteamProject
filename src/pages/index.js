@@ -79,16 +79,126 @@ export default function Home() {
                 })
               }
             />
+            <SaleCard
+              image={"for-honor.jpg"}
+              discount="20%"
+              fullPrice="149,90"
+              discountPrice="119,92"
+              onAdd={() =>
+                handleAddProduct({
+                  name: "For Honor",
+                  price: 119.92,
+                  image: "for-honor.jpg",
+                })
+              }
+            />
+
+            <SaleCard
+              image={"remnant.jpg"}
+              discount="20%"
+              fullPrice="149,90"
+              discountPrice="119,92"
+              onAdd={() =>
+                handleAddProduct({
+                  name: "Remnant",
+                  price: 119.92,
+                  image: "remnant.jpg",
+                })
+              }
+            />
+
+            <SaleCard
+              image={"boutgun.jpg"}
+              discount="20%"
+              fullPrice="149,90"
+              discountPrice="119,92"
+              onAdd={() =>
+                handleAddProduct({
+                  name: "Boutgun",
+                  price: 119.92,
+                  image: "boutgun.jpg",
+                })
+              }
+            />
           </div>
+
           <div className={styles.session}>
             <Subtitle> Outros Jogos</Subtitle>
             <div className={styles.gamecontainer}>
               <GameCard
+                image={"counter-strike.jpg"}
+                title={"Call of Duty Black OPS III"}
+                fullPrice="99,90"
                 onAdd={() =>
                   handleAddProduct({
                     name: "Counter Strike GO",
                     price: 99.9,
                     image: "counter-strike.jpg",
+                  })
+                }
+              />
+
+              <GameCard
+                image={"cod.jpg"}
+                title={"Call of Duty Black OPS III"}
+                fullPrice="149,90"
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Call Of Duty - Black OPS III",
+                    price: 99.9,
+                    image: "cod.jpg",
+                  })
+                }
+              />
+
+              <GameCard
+                image={"the-lord-of-the-rings.jpg"}
+                title={"The Lord Of The Rings"}
+                fullPrice="189,90"
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "The Lord Of The Rings",
+                    price: 189.9,
+                    image: "the-lord-of-the-rings.jpg",
+                  })
+                }
+              />
+
+              <GameCard
+                image={"farcry5.jpg"}
+                title={"Farcry 5"}
+                fullPrice="129,90"
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Farcry 5",
+                    price: 129.9,
+                    image: "farcry5.jpg",
+                  })
+                }
+              />
+
+              <GameCard
+                image={"gta-v.jpg"}
+                title={"GTA V"}
+                fullPrice="199,90"
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "GTA V",
+                    price: 199.9,
+                    image: "gta-v.jpg",
+                  })
+                }
+              />
+
+              <GameCard
+                image={"master-duel.jpg"}
+                title={"Yu-Gi-Oh! - Master Duel"}
+                fullPrice="109,90"
+                onAdd={() =>
+                  handleAddProduct({
+                    name: "Yu-Gi-Oh! - Master Duel",
+                    price: 109.9,
+                    image: "master-duel.jpg",
                   })
                 }
               />
