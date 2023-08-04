@@ -25,11 +25,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>DevSteam: A sua loja online de games</title>
-        <meta
-          name="description"
-          content="DevSteam: A sua loja online de games"
-        />
+        <title>SteamProject</title>
+        <meta name="description" content="SteamProject" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/steam.ico" />
       </Head>
@@ -129,6 +126,7 @@ export default function Home() {
                 image={"counter-strike.jpg"}
                 title={"Call of Duty Black OPS III"}
                 fullPrice="99,90"
+                category={"Ação, estratégia, multijogador"}
                 onAdd={() =>
                   handleAddProduct({
                     name: "Counter Strike GO",
@@ -142,6 +140,7 @@ export default function Home() {
                 image={"cod.jpg"}
                 title={"Call of Duty Black OPS III"}
                 fullPrice="149,90"
+                category={"Ação, estratégia, multijogador"}
                 onAdd={() =>
                   handleAddProduct({
                     name: "Call Of Duty - Black OPS III",
@@ -155,6 +154,7 @@ export default function Home() {
                 image={"the-lord-of-the-rings.jpg"}
                 title={"The Lord Of The Rings"}
                 fullPrice="189,90"
+                category={"Fantasia, estratégia, ficção"}
                 onAdd={() =>
                   handleAddProduct({
                     name: "The Lord Of The Rings",
@@ -168,6 +168,7 @@ export default function Home() {
                 image={"farcry5.jpg"}
                 title={"Farcry 5"}
                 fullPrice="129,90"
+                category={"Ação, estratégia, aventura, mundo aberto"}
                 onAdd={() =>
                   handleAddProduct({
                     name: "Farcry 5",
@@ -181,6 +182,7 @@ export default function Home() {
                 image={"gta-v.jpg"}
                 title={"GTA V"}
                 fullPrice="199,90"
+                category={"Ação, aventura, dinâmico"}
                 onAdd={() =>
                   handleAddProduct({
                     name: "GTA V",
@@ -194,6 +196,7 @@ export default function Home() {
                 image={"master-duel.jpg"}
                 title={"Yu-Gi-Oh! - Master Duel"}
                 fullPrice="109,90"
+                category={"Competição, estratégia, multijogador"}
                 onAdd={() =>
                   handleAddProduct({
                     name: "Yu-Gi-Oh! - Master Duel",

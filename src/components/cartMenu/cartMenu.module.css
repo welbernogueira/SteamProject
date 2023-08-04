@@ -26,6 +26,23 @@
   color: #beeb14;
 }
 
+.button {
+  padding: 15px 5px;
+  border-radius: 10px;
+  background: #549300;
+  border: 0;
+  font-weight: 700;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background: #2e4d01;
+}
+
 @media (max-width: 500px) {
   .menu {
     width: 300px;
